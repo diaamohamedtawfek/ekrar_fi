@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">إقرار</string>
+    <string name="text_title">هناك حقيقة مثبتة منذ زمن طويل وهى ان المحتوى المقروء لصفحة ما سيلهى القارئ</string>
+
+    <string name="types_pay">نقدي</string>
+    <string-array name="pays_arrays">
+        <item>كاش</item>
+        <item>اجل</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="invoice_from">سند قبض من %1$s</string>
+    <string name="invoice_to">سند قبض الى %1$s</string>
+    <string name="productName"> اسم المنتج: %1$s</string>
+    <string name="amount"> الكمية: %1$s</string>
+    <string name="unit"> الوحدة: %1$s</string>
+    <string name="price"> السعر: %1$s</string>
+    <string name="product_number"> المنتج رقم: %1$d</string>
+
+    <string name="payment_number"> تاريخ: %1$s</string>
+    <string name="payment_number_text"> تاريخ: %1$s</string>
+
+    <string name="paymentName"> القيمة: %1$s</string>
+
+    <string name="paymentpaid"> القيمةالمدفوعة: %1$s</string>
+    <string name="paymentrest"> الباقي: %1$s</string>
+
+    //FCM
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="failed_retrive_data">خطأ ف استرجاع البيانات</string>
+    <string name="noconnection">لا يوجد اتصال حاليا</string>
+    <string name="error">خطأ ارجوا المحاوله ثانيا!</string>
+    <string name="add_success">تم الأضافه بنجاح</string>
+    <string name="login">تسجيل دخول</string>
+
+
+    <string-array name="gender">
+        <item>mal</item>
+        <item>femail</item>
+
+    </string-array>
+
+</resources>

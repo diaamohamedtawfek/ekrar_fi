@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/navigation_notif"
+        android:icon="@drawable/back_item"
+        app:showAsAction="always|withText"
+        android:title="التنبيهات" />
+    <item android:id="@+id/navigation_main"
+        android:icon="@drawable/h"
+        android:checked="true"
+        app:showAsAction="always|withText"
+        android:title="الصفحة الرئيسية" />
+
+    <item android:id="@+id/navigation_profile"
+        android:icon="@drawable/p"
+        app:showAsAction="always|withText"
+        android:title="الصفحة الشخصية" />
+
+
+
+
+</menu>

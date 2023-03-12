@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorTransparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/download"
+                android:background="?android:attr/selectableItemBackground"
+                android:weightSum="3"
+                android:padding="8dp">
+
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:id="@+id/closeimage"
+                    android:layout_height="34dp"
+                    android:src="@drawable/cancel"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="نوع سند"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="-7sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="42sp"
+                android:text="الكل"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="42sp"
+                android:gravity="right"
+                android:text=" سند عيني"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="42sp"
+                android:gravity="right"
+                android:text=" سند قبض نقدي"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="42sp"
+                android:gravity="right"
+                android:text="سند نصي"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="42sp"
+                android:gravity="right"
+                android:text=" تسليم عهده"/>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

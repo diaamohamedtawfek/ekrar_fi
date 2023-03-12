@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "220557163537",
+    "firebase_url": "https://ekrar-ec1f6.firebaseio.com",
+    "project_id": "ekrar-ec1f6",
+    "storage_bucket": "ekrar-ec1f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220557163537:android:fda7008d5a75f2652dc5b0",
+        "android_client_info": {
+          "package_name": "com.otex.ekrar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220557163537-f0pbohnaf23r3an09kubr24t2s6romas.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.otex.ekrar",
+            "certificate_hash": "0b78a494c168ef4ac0678b434f0201d7217dde07"
+          }
+        },
+        {
+          "client_id": "220557163537-mjqtajs9ls7n1fig7gl1d51c7comgs3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr4B7hBX8sSYKLuKS1GlQjjCYQdvdLdkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220557163537-mjqtajs9ls7n1fig7gl1d51c7comgs3p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "220557163537-ldkkmiackv4520okidm4bg7tfl3psb5a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.otex.ekrar"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

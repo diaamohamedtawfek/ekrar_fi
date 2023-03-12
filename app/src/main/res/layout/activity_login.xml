@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startApp.LoginActivity"
+    android:isScrollContainer="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="735dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/bacground_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:adjustViewBounds="true"
+                android:background="@drawable/image_login"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/bacground_imagead"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:adjustViewBounds="true"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+
+
+
+       <ScrollView
+           android:isScrollContainer="false"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <RelativeLayout
+                   android:layoutDirection="ltr"
+                   android:id="@+id/app_bar"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp">
+
+
+                   <ImageButton
+                       android:id="@+id/image_arrow"
+                       android:layout_width="wrap_content"
+                       android:layout_height="20dp"
+                       android:layout_centerVertical="true"
+                       android:paddingLeft="20dp"
+                       android:paddingRight="20dp"
+                       android:src="@drawable/arrow"
+                       android:background="@null"
+                       android:scaleType="fitCenter"/>
+
+                   <TextView
+                       android:id="@+id/text_reg"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:gravity="center"
+                       android:text="@string/login"
+                       android:textColor="@color/white"
+                       android:textSize="20dp" />
+
+               </RelativeLayout>
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="170dp"
+                   android:src="@drawable/phone_login" />
+
+
+
+               <androidx.cardview.widget.CardView
+                   android:layout_marginRight="22dp"
+                   android:layout_marginLeft="22dp"
+                   app:cardCornerRadius="22dp"
+                   app:cardElevation="3dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+
+
+                   <ScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       tools:ignore="NestedScrolling">
+
+                       <LinearLayout
+                           android:paddingLeft="18dp"
+                           android:paddingRight="18dp"
+                           android:paddingTop="22dp"
+                           android:layoutDirection="rtl"
+                           android:orientation="vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+
+                           <TextView
+                               android:id="@+id/txt_createaccount1"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:textSize="26dp"
+                               android:textColor="@color/black"
+                               android:text="مرحبا بك "/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="12sp"
+                               android:textColor="@color/black"
+                               android:text="يرجى تسجيل الدخول أو الاشتراك لمواصلة استخدام التطبيق"/>
+
+
+                           <TextView
+                               android:layout_marginLeft="22dp"
+                               android:layout_marginRight="22dp"
+                               android:layout_marginTop="28dp"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:textSize="13sp"
+                               android:textColor="#2e2e2e"
+                               android:text="رقم الهويه­­"/>
+
+                           <!--android:text="1122334445"-->
+                           <EditText
+                               android:id="@+id/idCardLogin"
+                               android:inputType="number"
+                               android:text="1122334445"
+                               android:layout_width="match_parent"
+                               android:layout_height="46dp"
+                               android:importantForAutofill="no" />
+
+
+                           <TextView
+                               android:layout_marginLeft="22dp"
+                               android:layout_marginRight="22dp"
+                               android:layout_marginTop="12dp"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:textSize="13sp"
+                               android:textColor="#2e2e2e"
+                               android:lineSpacingExtra="4sp"
+                               android:text="كلمه المرور­­"/>
+
+                           <!--    android:text="12345678"-->
+                           <EditText
+                               android:text="12345678"
+                               android:id="@+id/idPasswordLogin"
+                               android:inputType="textPassword"
+                               android:layout_width="match_parent"
+                               android:layout_height="46dp"
+                               />
+
+
+                           <TextView
+                               android:id="@+id/forgetPassword_Login"
+                               android:layout_marginTop="12dp"
+                               android:layout_marginBottom="20dp"
+                               android:layout_gravity="end"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="12sp"
+                               android:textColor="#1492e6"
+                               android:lineSpacingExtra="2sp"
+                               android:text="هل نسيت كلمه المرور ؟"/>
+
+
+                           <LinearLayout
+                               android:weightSum="5"
+                               android:gravity="center"
+                               android:orientation="horizontal"
+                               android:layout_width="match_parent"
+                               android:layout_height="20dp">
+
+                               <View
+                                   android:layout_width="0dp"
+                                   android:layout_height="1dp"
+                                   android:layout_weight="2"
+                                   android:background="@color/grey">
+                               </View>
+
+
+<!--                               <TextView-->
+<!--                                   android:layout_width="0dp"-->
+<!--                                   android:gravity="center"-->
+<!--                                   android:layout_height="wrap_content"-->
+<!--                                   android:layout_weight="1"-->
+<!--                                   android:textStyle="normal"-->
+<!--                                   android:textSize="14sp"-->
+<!--                                   android:textColor="#000000"-->
+<!--                                   android:lineSpacingExtra="5sp"-->
+<!--                                   android:text="او"/>-->
+
+                               <View
+                                   android:layout_width="0dp"
+                                   android:layout_height="1dp"
+                                   android:layout_weight="2"
+                                   android:background="@color/grey">
+                               </View>
+
+                           </LinearLayout>
+
+
+
+                           <Button
+                               android:id="@+id/login_login"
+                               android:layout_marginTop="40dp"
+                               android:gravity="center"
+                               android:layout_gravity="center"
+                               android:layout_width="190dp"
+                               android:layout_height="50dp"
+                               android:text="@string/login"
+                               />
+
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="44dp"/>
+                       </LinearLayout>
+
+
+
+
+                   </ScrollView>
+
+               </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+               <LinearLayout
+                   android:id="@+id/linearLayoutSignUp_Login"
+                   android:layout_marginTop="22dp"
+                   android:layout_width="match_parent"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   android:layout_marginBottom="55dp"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textStyle="bold"
+                       android:textSize="14sp"
+                       android:textColor="#abb4bd"
+                       android:text="ليس لديك حساب؟"/>
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textStyle="bold"
+                       android:textSize="14sp"
+                       android:textColor="@color/colorPrimary"
+                       android:text=" سجل الان"/>
+
+
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+       </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

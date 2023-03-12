@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="standard_55">70dp</dimen>
+    <dimen name="standard_105">140dp</dimen>
+    <dimen name="standard_155">180dp</dimen>
+    <dimen name="fab1">70dp</dimen>
+    <dimen name="fab2">70dp</dimen>
+    <dimen name="fab3">0dp</dimen>
+</resources>

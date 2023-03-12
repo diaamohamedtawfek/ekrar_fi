@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:isScrollContainer="false"
+    tools:context=".startApp.RegistrationActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="735dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/bacground_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:adjustViewBounds="true"
+                android:background="@drawable/image_login"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/bacground_imagead"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:adjustViewBounds="true"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layoutDirection="ltr"
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+
+                    <ImageButton
+                        android:id="@+id/image_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/arrow"
+                        android:background="@null"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:id="@+id/text_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="سجل الان"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/phone_login" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="22dp"
+                    android:layout_marginLeft="22dp"
+                    app:cardCornerRadius="22dp"
+                    app:cardElevation="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="NestedScrolling">
+
+                        <LinearLayout
+                            android:paddingLeft="18dp"
+                            android:paddingRight="18dp"
+                            android:paddingTop="22dp"
+                            android:layoutDirection="rtl"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/txt_createaccount1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="26dp"
+                                android:textColor="@color/black"
+                                android:text="مرحبا بك "/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"
+                                android:text="يرجى تسجيل الدخول أو الاشتراك لمواصلة استخدام التطبيق"/>
+
+
+                            <TextView
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="28dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="#2e2e2e"
+                                android:text="الاسم"/>
+
+                            <EditText
+                                android:nextFocusLeft="@+id/idCard_SignUp"
+                                android:imeOptions="actionNext"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:id="@+id/id_name_SignUp"
+                                android:inputType="textImeMultiLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:importantForAutofill="no" />
+
+
+                            <TextView
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="#2e2e2e"
+                                android:lineSpacingExtra="4sp"
+                                android:text="رقم الهويه­­­"/>
+
+                            <EditText
+                                android:inputType="number"
+                                android:id="@+id/idCard_SignUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                />
+
+
+
+                            <TextView
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="28dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="#2e2e2e"
+                                android:text="الجنسيه"/>
+
+                            <EditText
+                                android:id="@+id/natonality_signUp"
+                                android:inputType="text"
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:importantForAutofill="no" />
+
+
+                            <TextView
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="#2e2e2e"
+                                android:lineSpacingExtra="4sp"
+                                android:text="الجنس"/>
+
+<!--                            <EditText-->
+<!--                                android:inputType="textImeMultiLine"-->
+<!--                                android:id="@+id/gender_signUp"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="46dp"-->
+<!--                                />-->
+
+                            <Spinner
+                                android:background="@drawable/busin"
+                                android:id="@+id/spinner1"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:entries="@array/gender" />
+
+
+
+                            <TextView
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="28dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="#2e2e2e"
+
+                                android:text="البريد الالكتروني"/>
+
+                            <EditText
+                                android:inputType="textImeMultiLine"
+                                android:id="@+id/email_signUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:importantForAutofill="no" />
+
+
+                            <TextView
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="#2e2e2e"
+                                android:lineSpacingExtra="4sp"
+                                android:text="رقم الجوال"/>
+
+                            <EditText
+                                android:id="@+id/phone_signUp"
+                                android:inputType="textImeMultiLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                />
+
+
+
+                            <TextView
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="28dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="#2e2e2e"
+                                android:text="كلمه المرور"/>
+
+                            <EditText
+                                android:id="@+id/idPassword_SignUp"
+                                android:inputType="textPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:importantForAutofill="no" />
+
+
+                            <TextView
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="22dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="#2e2e2e"
+                                android:lineSpacingExtra="4sp"
+                                android:text="تاكيد كلمه المرور "/>
+
+                            <EditText
+                                android:id="@+id/rePassword_SignUp"
+                                android:inputType="textPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                />
+
+
+
+
+                            <Button
+                                android:id="@+id/signUp_SignUp"
+                                android:layout_marginTop="40dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="190dp"
+                                android:layout_height="50dp"
+                                android:text="سجل الان"
+                                />
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"/>
+                        </LinearLayout>
+
+
+
+
+                    </ScrollView>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/loginSignUp"
+                    android:layout_marginTop="22dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="55dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#abb4bd"
+                        android:text=" لدي حساب بالفعل ؟  "/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="تسجيل دخول"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

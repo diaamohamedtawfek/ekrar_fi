@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="100dp"
+    android:width="100dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100">
+    <path
+        android:name="dark_triangle"
+        android:fillColor="#194582"
+        android:pathData="M 100,0 L 0,100 100,100 z" />
+     </vector>
+
+
+    <!--<path-->
+        <!--android:name="dark_triangle"-->
+        <!--android:fillColor="@color/black"-->
+        <!--android:pathData="M 100,0 L 0,100 100,100 z" />-->
+
+    <!--<path-->
+        <!--android:name="light_triangle"-->
+        <!--android:fillColor="@color/white"-->
+        <!--android:pathData="M 0,0 L 100,0 0,100 z"/>-->
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >-->
+    <!--<item-->
+        <!--android:left="90dip">-->
+        <!--<shape-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:shape="rectangle" >-->
+            <!--<solid android:color="#0000FF" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item android:left="300dip">-->
+        <!--<shape-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:shape="rectangle" >-->
+            <!--<solid android:color="@color/white" />-->
+        <!--</shape>-
+    <-</item>-->
+
+<!--</layer-list>-->
+
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >-->
+
+    <!--<item>-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<size-->
+                <!--android:width="500dp"-->
+                <!--android:height="400dp" />-->
+            <!--<solid android:color="#0072BC" />-->
+            <!--<corners android:radius="0dp"/>-->
+
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item-->
+        <!--android:top="8dp"-->
+        <!--android:bottom="0dp"-->
+        <!--android:left="-400dp"-->
+        <!--android:right="128dp">-->
+        <!--<rotate-->
+            <!--android:fromDegrees="200">-->
+            <!--<shape android:shape="rectangle">-->
+                <!--<solid android:color="#FFF" />-->
+            <!--</shape>-->
+        <!--</rotate>-->
+    <!--</item>-->
+<!--</layer-list>-->

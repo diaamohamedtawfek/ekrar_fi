@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.otex.ekrar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Home.activtys.AllNotfiction"></activity>
+        <activity android:name=".Home.allSahenAndKafel.AllSahedAndKafel" />
+        <activity android:name=".Home.activtys.Sahed_Kafel_SingelId" />
+        <activity android:name=".Home.activtys.AddNewPayment" />
+        <activity android:name=".Home.activtys.DetelesResvie_And_SendDcument" />
+        <activity android:name=".Home.Send_Resived_Document.RecievedDocument" />
+        <activity android:name=".Home.Send_Resived_Document.SentDocument" />
+        <activity android:name=".Home.add_document.CashReceiptsActivity" />
+        <activity android:name=".Home.add_document.Add_Financial_InvoiceNew" />
+        <activity android:name=".Home.add_document.EkrarNase" />
+        <activity android:name=".startApp.ResetPassActivity" />
+        <activity android:name=".startApp.ConfirmationActivity" />
+        <activity android:name=".startApp.ForgotpasswordActivity" />
+        <activity android:name=".Home.Home" />
+        <activity android:name=".startApp.ConfirmUserActivity" />
+        <activity android:name=".startApp.RegistrationActivity" />
+        <activity android:name=".startApp.LoginActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context=".Home.add_document.EkrarNase">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#f5f5f5"
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageButton
+            android:id="@+id/image_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/arrow_black"
+            android:background="@null"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textColor="#303030"
+            android:lineSpacingExtra="3sp"
+            android:text="اضافه إقرار نصي"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#2e2e2e"
+            android:lineSpacingExtra="5sp"
+            android:text="المرسل اليه ( رقم الهوية أو الاقامه)"/>
+
+<!--        android:text="1234598765"-->
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/nationalId_ekrarNace"
+            android:inputType="number"
+            android:background="@drawable/square_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#2e2e2e"
+            android:lineSpacingExtra="5sp"
+            android:text="عنوان"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/address_ekrarNace"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/square_edittext"
+            android:importantForAutofill="no" />
+
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#2e2e2e"
+            android:lineSpacingExtra="5sp"
+            android:text="صيغه الإقرار النصي"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/type_ekrarNace"
+            android:ems="100"
+            android:minLines="5"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_edittext"
+            android:importantForAutofill="no" />
+
+
+        <Button
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/btn_add_ekrarNase"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="إرسال" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

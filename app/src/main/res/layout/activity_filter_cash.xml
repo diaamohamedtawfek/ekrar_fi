@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.otex.ekrar.FilterActivity"
+    android:background="@color/white">
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/app_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:orientation="horizontal">-->
+        <TextView
+            android:id="@+id/text_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="بحث"
+            android:textColor="@color/black"
+           />
+
+    <!--</RelativeLayout>-->
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="right"-->
+            <!--android:orientation="vertical">-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="رقم السند"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/codeNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+            <TextView
+                android:id="@+id/txt_name_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="رقم الهوية او الأقامة"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edtext_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="@color/grey"
+                android:inputType="number"/>
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="التاريخ من"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/edt_date_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/calendar"
+        android:drawablePadding="6dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        style="@style/Ekrar.EditText"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    <TextView
+        android:id="@+id/txt_datefrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="التاريخ إلى"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/edt_dateto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/calendar"
+        android:drawablePadding="6dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        style="@style/Ekrar.EditText"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+
+            <TextView
+                android:id="@+id/txt_document_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="نوع الدفع"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:background="@drawable/spinner_bg"
+                android:id="@+id/spinner_cash"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="بحث" />
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView>

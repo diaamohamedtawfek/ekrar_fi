@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/actionbar"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/image_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/txt_docu_bond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="سند قبض نقدي"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/app_bar"-->
+        <!--android:fillViewport="true">-->
+        <!--<LinearLayout-->
+        <!--android:id="@+id/menuLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:orientation="vertical">-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="يمكنك اضافة دفعات المطلوبه"
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cash_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_bar"
+                android:layout_marginTop="10dp"
+                tools:listitem="@layout/row_cash_receipts">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn_payments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rounded_button"
+                android:drawableRight="@mipmap/add"
+                android:drawableTint="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="اضافة دفعات أخرى" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="إرسال" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

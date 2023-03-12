@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#194584</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">#194584</color>
+    <color name="grey">#9e9e9e</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="greyshade">#EBEBEB</color>
+    <color name="blue">#FF258ADA</color>
+    <color name="notification">#D5ECFF</color>
+    <color name="colorTransparent">#43000000</color>
+    <color name="redTransparent">#7ffd0101</color>
+    <color name="fabcolor">#3F51B5</color>
+    <color name="fabcolorxx">#ff0c35</color>
+    <color name="yellow">#ffc30b</color>
+    <color name="dialogcolor">#194582</color>
+    <color name="green">#FF4CAF50</color>
+    <color name="darkgrey">#e0e0e0</color>
+    <color name="button_blue">#194584</color>
+
+    <color name="trans">#12FFFFFF</color>
+</resources>
